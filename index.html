@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+
+<body>
+
+    <main>
+        <article>
+            <h1>Dobro došli u "Malu piramidu"!</h1>
+            <p> Naš kreativni tim priredio je pravu poslasticu za sve ljubitelje kvizova!
+                Sve što vam je potrebno za osvojanje našeg piramidalnog vrha, su znanje i strpljenje.
+                Prvo otključano polje je "Podnožje", a samo vašom spretnošću, 
+                otkrićete stepenik za prolaz u sledeći nivo, i tako sve do vrha!
+            </br>Uživajte i srećno!</p>
+        </article>
+        <div class="container">
+            <div class="glass-pyramid">
+                <div class="top butt">Kairo</div>
+                <div class="mid butt">Dolina kraljeva</div>
+                <div class="bottom butt">Podnožje</div>
+            </div>
+        </div>
+        
+       <div class="circle-1"></div>
+       <div class="circle-2"></div>
+       
+    </main>
+        
+   <div class="tool-1 tool">
+        <h2>Istorija</h2>
+        <p>Ona je učiteljica života, kaže latinska izreka, a put do vrha počinje upravo u "Podnožju". Najmanje 2/3 tačnih odgovora uzdižu te do grobnice</p>
+    </div>
+    <div class="tool-2 tool">
+        <h2>Dolina kraljeva</h2>
+        <p>Ovo je mesto gde počiva faraon. Izgrađena je po savršenim matematičkim formulama. Reši ih, skini kletvu i popni se na vrh!</p>
+    </div>
+    <div class="tool-3 tool">
+        <h2>Kairo</h2>
+        <p>Ovo je najmnogoljudniji grad na svetu. Sa vrha puca pogled na beskrajna svetla velegrada. Osvoji ga i osnuj vladajuću dinastiju! </p>
+    </div>
+
+     <!-- POPUPS -->
+<!-- POPUP BOTTOM -->
+
+     <div class="popup-background">
+         <div class="quiz-content">
+             <div class="question">
+                 <h2 id="main-question"></h2>
+                 <span class="cancle-x">X</span>
+             </div>
+             <div class="solutions">
+                
+                    <li><input class="answer" type="radio" id="a" name="answer" >
+                        <label id="a-answer" for="a">Question</label>
+                    </li>
+                    <li><input class="answer" type="radio" id="b" name="answer" >
+                        <label id="b-answer" for="b">Question</label>
+                    </li>
+                    <li><input class="answer" type="radio" id="c" name="answer" >
+                        <label id="c-answer" for="c">Question</label>
+                    </li>
+                    <li><input class="answer" type="radio" id="d" name="answer" >
+                        <label id="d-answer" for="d">Question</label>
+                    </li>
+                </ul>
+            </div>
+                <div class="buttons">
+                    <button id="next-button" class="button">Next</button>
+                    <button id="cancle-button" class="button">Cancle</button>
+                </div>
+            </div>
+     </div>
+
+     <!-- POPUP RESULT OF BOTTOM -->
+
+     <div id="results" class="popup-background result-one">
+        <div class="quiz-content final-touch">
+            <h1 id='ansewr-heading' style="text-align: center;">Imate</h1>
+            <p style="font-size: 2rem; font-weight: 900;">Broj vaših tačnih odgovora je:</p>
+            <span class="final"></span>
+            <span class="cancle-x cancle-final">X</span>
+        </div>
+        
+ </div>
+
+     <script src="quizapp.js"></script>
+</body>
+</html>
